@@ -1,3 +1,5 @@
+# final-project
+
 # Secret Scanner CLI
 
 This project provides a Python command-line tool that scans a file or directory for common patterns associated with hardcoded secrets, such as API keys, passwords, access tokens, and private keys.
@@ -58,4 +60,3 @@ config.py:12: Private Key: -----BEGIN RSA PRIVATE KEY-----
 ## Notes
 
 This tool is intended as a basic security scanner for development and education. It is not a substitute for a full secret-management solution or a production security scanner.
-# final-project
