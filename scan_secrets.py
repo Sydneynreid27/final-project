@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 """Scan files for hardcoded secrets using regex-based detection."""
 
 import argparse
@@ -9,7 +9,6 @@ from pathlib import Path
 
 LOGGER = logging.getLogger(__name__)
 
-# Common patterns for secrets. These include both generic and service-specific tokens.
 SECRET_PATTERNS = (
     ("AWS Access Key", re.compile(r"(?<![A-Z0-9])AKIA[0-9A-Z]{16}(?![A-Z0-9])")),
     ("GitHub Token", re.compile(r"gh[pousr]_[A-Za-z0-9]{20,}")),
